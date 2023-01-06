@@ -1,0 +1,85 @@
+button{
+    background-color:#FFE4C4;
+  }
+  
+ button:hover{
+    background-color:rgb(226, 150, 9);
+  }
+ 
+
+ 
+.clockArea {
+    width: 222px;
+    height: 378px;
+    
+}
+
+.clock {
+    width: 554px;
+    height: 945px;
+    position: relative;
+    transform-origin: 0% 0%;
+    transform: scale(.4);
+}
+
+.clock * {
+    position: absolute;
+}
+
+.clockface {
+    width: 369px;
+    height: 369px;
+    left: 92px;
+    top: 88px;
+}
+
+.pendulus {
+    left: 194px;
+    top: 420px;
+    transform-origin: 50% 0%;
+    animation: swing 1s ease-in-out infinite alternate;
+}
+
+
+.clockhand {
+    top: 10px;
+    left: 158px;
+    transform-origin: 50% 177px;
+/*    animation-name: spin;
+    
+    animation-timing-function: linear; /*ease linear ease-in -out ease-in-out cubic n,n,n,n */
+   /* animation-delay: 3s;*/
+ /*   animation-iteration-count: infinite; /*infinite - pidevalt */
+ /*   animation-direction: normal; /*normal reverse alternate alternate-reverse*/
+ /*   animation-fill-mode: both; /*backwards forwards both */
+ /*   animation-play-state: running;*/
+
+
+}
+/*
+.secondhand {
+    animation-duration: 2s;
+}
+
+.minutehand {
+    animation-duration: 60s;
+}
+.hourhand {
+    animation-duration: 720s;
+}*/
+
+
+/*.secondhand:hover {
+    animation-play-state: running;
+}*/
+
+
+@keyframes spin {
+    0% {transform: rotate(0deg); }
+    100% {transform: rotate(360deg); }
+}
+
+@keyframes swing {
+    0% {transform: rotate(30deg);}
+    100% {transform: rotate(-30deg);}
+}
